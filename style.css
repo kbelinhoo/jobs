@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template: 10vh 80vh 45vh 45vh 45vh 45vh 70vh 70vh 15vh/ 1fr 2fr 2fr;
+    grid-template-areas:
+        "h h h"
+        "b b b"
+        "s1 s1 s1"
+        "s2 s2 s2"
+        "s3 s3 s3"
+        "s4 s4 s4"
+        "m1 m1 m1"
+        "m2 m2 m2"
+        "f f f";
+    background-color: black;
+    gap: 0vh;
+}
+
+header {
+    background-color: rgb(112, 112, 112);
+    grid-area: h;
+    display: grid;
+    grid-template: 8vh / 1fr 4fr 1fr;
+    grid-template-areas:
+        "logo nav bandeira"
+    ;
+    gap: 5vh;
+}
+
+#logo {
+    grid-area: logo;
+    max-width: 50px;
+    max-height: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.nav_link {
+    background-color: rgb(112, 112, 112);
+    grid-area: nav;
+}
+
+#bandeira {
+    grid-area: bandeira;
+    max-width: 25px;
+    max-height: 25px;
+    margin-top: 25px;
+}
+
+.banner {
+    background-color: black;
+    grid-area: b;
+    display: grid;
+    grid-template: 60vh 10vh / 1fr;
+    grid-template-areas:
+        "imgbanner"
+        "txtbanner"
+    ;
+    gap: 1vh;
+}
+
+.imgbanner {
+    background-color: black;
+    grid-area: imgbanner;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.txtbanner {
+    background-color: black;
+    grid-area: txtbanner;
+    text-align: center;
+    font-size: 72px;
+    color: white;
+}
+
+.section1 {
+    grid-area: s1;
+    display: grid;
+    grid-template: 40vh / 2fr 1fr;
+    grid-template-areas:
+        "a_txt f_img"
+    ;
+    gap: 1vh;
+    padding: 3%;
+    position: relative;
+    background-image: url(img/Garagem\ Apple.jpg);
+}
+
+.title_standard {
+    text-align: center;
+    grid-area: title_standard;
+}
+
+.txt_standard {
+    text-align: center;
+    grid-area: txt_standard;
+}
+
+.article_txt {
+    grid-area: a_txt;
+    display: grid;
+    grid-template: 5vh 30vh / 1fr;
+    grid-template-areas:
+        "title_standard"
+        "txt_standard"
+    ;
+    gap: 1vh;
+    padding: 3%;
+}
+
+.figure_img {
+    grid-area: f_img;
+}
+
+.section2 {
+    grid-area: s2;
+    display: grid;
+    grid-template: 40vh / 1fr 2fr;
+    grid-template-areas:
+        "f_img a_txt"
+    ;
+    gap: 1vh;
+    padding: 3%;
+    background-image: url(img/Fundo\ Atari.jpg);
+}
+
+.section3 {
+    grid-area: s3;
+    display: grid;
+    grid-template: 40vh / 2fr 1fr;
+    grid-template-areas:
+        "a_txt f_img"
+    ;
+    gap: 1vh;
+    padding: 3%;
+    background-image: url(img/Apple\ office.jpg);
+}
+
+.section4 {
+    grid-area: s4;
+    display: grid;
+    grid-template: 40vh / 1fr 2fr;
+    grid-template-areas:
+        "f_img a_txt"
+    ;
+    gap: 1vh;
+    padding: 3%;
+    background-image: url(img/Pixar\ fundo.jpg);
+}
+
+.main1 {
+    background-color: rgb(172, 172, 172);
+    grid-area: m1;
+    display: grid;
+    grid-template: 5vh 55vh / 1fr 1fr 1fr;
+    grid-template-areas:
+        "txt_msell txt_msell txt_msell"
+        "sell1 sell2 sell3"
+    ;
+    gap: 1vh;
+    padding: 3%;
+    margin-bottom: 25px;
+}
+
+.txt_msell {
+    grid-area: txt_msell;
+    text-align: center;
+}
+
+.sell1 {
+    grid-area: sell1;
+    display: grid;
+    grid-template: 4vh 20vh 20vh/ 1fr;
+    grid-template-areas:
+        "t_sell"
+        "h_sell"
+        "txt_sell"
+    ;
+    gap: 1vh;
+    padding: 3%;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: white;
+}
+
+.sell2 {
+    grid-area: sell2;
+    display: grid;
+    grid-template: 4vh 20vh 20vh/ 1fr;
+    grid-template-areas:
+        "t_sell"
+        "h_sell"
+        "txt_sell"
+    ;
+    gap: 1vh;
+    padding: 3%;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: white;
+}
+
+.sell3 {
+    grid-area: sell3;
+    display: grid;
+    grid-template: 4vh 20vh 20vh/ 1fr;
+    grid-template-areas:
+        "t_sell"
+        "h_sell"
+        "txt_sell"
+    ;
+    gap: 1vh;
+    padding: 3%;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: white;
+}
+
+.t_sell {
+    grid-area: t_sell;
+    text-align: center;
+    margin-top: 1vh;
+}
+
+.h_sell {
+    grid-area: h_sell;
+}
+
+.txt_sell {
+    grid-area: txt_sell;
+    text-align: justify;
+    padding: 3%;
+}
+
+.main2 {
+    background-color: rgb(172, 172, 172);
+    grid-area: m2;
+    display: grid;
+    grid-template: 5vh 55vh / 1fr 1fr 1fr;
+    grid-template-areas:
+        "txt_msell txt_msell txt_msell"
+        "sell1 sell2 sell3"
+    ;
+    gap: 1vh;
+    padding: 3%;
+    margin-bottom: 25px;
+}
+
+footer {
+    background-color: rgb(112, 112, 112);
+    grid-area: f;
+    text-align: center;
+}
+
+.sell_img {
+    position: relative;
+    max-width: 10vh;
+}
