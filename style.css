@@ -293,14 +293,13 @@ header {
     background-color: rgb(172, 172, 172);
     grid-area: m1;
     display: grid;
-    grid-template: 5vh 55vh / 1fr 1fr 1fr;
+    grid-template: 5vh 65vh / 1fr 1fr 1fr;
     grid-template-areas:
         "txt_msell txt_msell txt_msell"
         "sell1 sell2 sell3"
     ;
     gap: 1vh;
     padding: 3%;
-    margin-bottom: 25px;
 }
 
 .txt_msell {
@@ -385,14 +384,13 @@ header {
     background-color: rgb(172, 172, 172);
     grid-area: m2;
     display: grid;
-    grid-template: 5vh 55vh / 1fr 1fr 1fr;
+    grid-template: 5vh 65vh / 1fr 1fr 1fr;
     grid-template-areas:
         "txt_msell txt_msell txt_msell"
         "sell1 sell2 sell3"
     ;
-    gap: 1vh;
+    gap: 2vh;
     padding: 3%;
-    margin-bottom: 25px;
 }
 
 footer {
