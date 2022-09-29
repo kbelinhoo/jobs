@@ -372,3 +372,7 @@ footer {
     position: relative;
     max-width: 10vh;
 }
+
+p{
+    font-size: 16px;
+}
