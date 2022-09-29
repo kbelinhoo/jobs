@@ -8,69 +8,102 @@
 
 .container {
     display: grid;
-    grid-template: 10vh 80vh 45vh 45vh 45vh 45vh 70vh 70vh 15vh/ 1fr 2fr 2fr;
+    grid-template: 10vh 90vh 60vh 60vh 60vh 60vh 85vh 85vh 25vh/ 1fr 2fr 2fr;
     grid-template-areas:
         "h h h"
         "b b b"
-        "s1 s1 s1"
-        "s2 s2 s2"
-        "s3 s3 s3"
-        "s4 s4 s4"
-        "m1 m1 m1"
-        "m2 m2 m2"
+        "sections sections sections"
+        "sections sections sections"
+        "sections sections sections"
+        "sections sections sections"
+        "mains mains mains"
+        "mains mains mains"
         "f f f";
     background-color: black;
     gap: 0vh;
 }
 
-#button1{
-    width: 100px;
-    height: 50px;
+.sections {
+    background-color: grey;
+    grid-area: sections;
+    display: grid;
+    grid-template: 55vh 55vh 55vh 55vh / 1fr 2fr 2fr;
+    grid-template-areas:
+        "s1 s1 s1"
+        "s2 s2 s2"
+        "s3 s3 s3"
+        "s4 s4 s4"
+    ;
+    padding: 3%;
+    gap: 1%;
 }
 
-#button2{
-    width: 100px;
-    height: 50px;
+.mains {
+    background-color: white;
+    grid-area: mains;
+    display: grid;
+    grid-template: 80vh 80vh / 1fr 2fr 2fr;
+    grid-template-areas:
+        "m1 m1 m1"
+        "m2 m2 m2"
+    ;
+    padding: 3%;
+    gap: 1%;
 }
 
-#button3{
-    width: 100px;
-    height: 50px;
+.button {
+    width: 70px;
+    height: 35px;
 }
 
-#button4{
-    width: 100px;
-    height: 50px;
+#button1 {
+    width: 70px;
+    height: 35px;
 }
 
-#button5{
-    width: 100px;
-    height: 50px;
+#button2 {
+    width: 70px;
+    height: 35px;
 }
 
-#button6{
-    width: 100px;
-    height: 50px;
+#button3 {
+    width: 70px;
+    height: 35px;
 }
 
-#button7{
-    width: 100px;
-    height: 50px;
+#button4 {
+    width: 70px;
+    height: 35px;
 }
 
-#button8{
-    width: 100px;
-    height: 50px;
+#button5 {
+    width: 70px;
+    height: 35px;
 }
 
-#button9{
-    width: 100px;
-    height: 50px;
+#button6 {
+    width: 70px;
+    height: 35px;
 }
 
-#button10{
-    width: 100px;
-    height: 50px;
+#button7 {
+    width: 70px;
+    height: 35px;
+}
+
+#button8 {
+    width: 70px;
+    height: 35px;
+}
+
+#button9 {
+    width: 70px;
+    height: 35px;
+}
+
+#button10 {
+    width: 70px;
+    height: 35px;
 }
 
 #nav_link {
@@ -368,11 +401,15 @@ footer {
     text-align: center;
 }
 
+#f_txt {
+    padding-top: 10vh;
+}
+
 .sell_img {
     position: relative;
     max-width: 10vh;
 }
 
-p{
+p {
     font-size: 16px;
 }
