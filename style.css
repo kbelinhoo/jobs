@@ -8,7 +8,7 @@
 
 .container {
     display: grid;
-    grid-template: 10vh 90vh 60vh 60vh 60vh 60vh 85vh 85vh 25vh/ 1fr 2fr 2fr;
+    grid-template: 10vh 90vh 60vh 60vh 60vh 60vh 85vh 85vh 15vh/ 1fr 2fr 2fr;
     grid-template-areas:
         "h h h"
         "b b b"
@@ -54,66 +54,19 @@
 .button {
     width: 70px;
     height: 35px;
-}
-
-#button1 {
-    width: 70px;
-    height: 35px;
-}
-
-#button2 {
-    width: 70px;
-    height: 35px;
-}
-
-#button3 {
-    width: 70px;
-    height: 35px;
-}
-
-#button4 {
-    width: 70px;
-    height: 35px;
-}
-
-#button5 {
-    width: 70px;
-    height: 35px;
-}
-
-#button6 {
-    width: 70px;
-    height: 35px;
-}
-
-#button7 {
-    width: 70px;
-    height: 35px;
-}
-
-#button8 {
-    width: 70px;
-    height: 35px;
-}
-
-#button9 {
-    width: 70px;
-    height: 35px;
-}
-
-#button10 {
-    width: 70px;
-    height: 35px;
+    grid-area: a_btn;
 }
 
 #nav_link {
     width: 100%;
-    background-color: grey;
+    grid-area: nav;
+    background-color: rgb(112, 112, 112);
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-left: 15%;
 }
 
 #nav_link ul {
@@ -159,11 +112,6 @@ header {
     margin-top: 10px;
 }
 
-.nav_link {
-    background-color: rgb(112, 112, 112);
-    grid-area: nav;
-}
-
 #bandeira {
     grid-area: bandeira;
     max-width: 25px;
@@ -199,20 +147,22 @@ header {
     color: white;
 }
 
-.section1 {
+#section1 {
     grid-area: s1;
     display: grid;
-    grid-template: 40vh / 2fr 1fr;
+    grid-template: 35vh 5vh / 2fr 1fr;
     grid-template-areas:
         "a_txt f_img"
+        "a_btn f_img"
     ;
     gap: 1vh;
     padding: 3%;
-    background-image: url(img/Garagem\ Apple.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Garagem\ Apple.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: yellow;
+    color: white;
+    text-align: center;
 }
 
 #title_standard {
@@ -241,55 +191,61 @@ header {
     grid-area: f_img;
 }
 
-.section2 {
+#section2 {
     grid-area: s2;
     display: grid;
-    grid-template: 40vh / 1fr 2fr;
+    grid-template: 35vh 5vh / 2fr 1fr;
     grid-template-areas:
-        "f_img a_txt"
+        "a_txt f_img"
+        "a_btn f_img"
     ;
     gap: 1vh;
     padding: 3%;
-    background-image: url(img/Fundo\ Atari.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/Fundo\ Atari.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    color: yellow;
+    color: white;
+    text-align: center;
 }
 
-.section3 {
+#section3 {
     grid-area: s3;
     display: grid;
-    grid-template: 40vh / 2fr 1fr;
+    grid-template: 35vh 5vh / 2fr 1fr;
     grid-template-areas:
         "a_txt f_img"
+        "a_btn f_img"
     ;
     gap: 1vh;
     padding: 3%;
-    background-image: url(img/Apple\ office.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/Apple\ office.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: yellow;
+    color: white;
+    text-align: center;
 }
 
-.section4 {
+#section4 {
     grid-area: s4;
     display: grid;
-    grid-template: 40vh / 1fr 2fr;
+    grid-template: 35vh 5vh / 2fr 1fr;
     grid-template-areas:
-        "f_img a_txt"
+        "a_txt f_img"
+        "a_btn f_img"
     ;
     gap: 1vh;
     padding: 3%;
-    background-image: url(img/Pixar\ fundo.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/Pixar\ fundo.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    color: yellow;
+    color: white;
+    text-align: center;
 }
 
-.main1 {
+#main1 {
     background-color: rgb(172, 172, 172);
     grid-area: m1;
     display: grid;
@@ -310,11 +266,12 @@ header {
 .sell1 {
     grid-area: sell1;
     display: grid;
-    grid-template: 4vh 20vh 20vh/ 1fr;
+    grid-template: 4vh 18vh 18vh 3vh/ 1fr;
     grid-template-areas:
         "t_sell"
         "h_sell"
         "txt_sell"
+        "a_btn"
     ;
     gap: 1vh;
     padding: 3%;
@@ -330,11 +287,12 @@ header {
 .sell2 {
     grid-area: sell2;
     display: grid;
-    grid-template: 4vh 20vh 20vh/ 1fr;
+    grid-template: 4vh 18vh 18vh 3vh/ 1fr;
     grid-template-areas:
         "t_sell"
         "h_sell"
         "txt_sell"
+        "a_btn"
     ;
     gap: 1vh;
     padding: 3%;
@@ -350,11 +308,12 @@ header {
 .sell3 {
     grid-area: sell3;
     display: grid;
-    grid-template: 4vh 20vh 20vh/ 1fr;
+    grid-template: 4vh 18vh 18vh 3vh/ 1fr;
     grid-template-areas:
         "t_sell"
         "h_sell"
         "txt_sell"
+        "a_btn"
     ;
     gap: 1vh;
     padding: 3%;
@@ -380,7 +339,7 @@ header {
     padding: 3%;
 }
 
-.main2 {
+#main2 {
     background-color: rgb(172, 172, 172);
     grid-area: m2;
     display: grid;
